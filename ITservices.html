@@ -1,0 +1,151 @@
+<html>
+<head>
+<title>: My Website </title>
+<link href="style1.css" type="text/css" rel="stylesheet" />
+<style>
+
+
+</style>
+
+</head>
+<script type="text/javascript">
+var imagecount = 1;
+var total = 6;
+
+function slide(X) {
+var Image = document.getElementById ('img');
+imagecount = imagecount + X;
+if(imagecount > total){imagecount = 1;}
+if(imagecount < 1){imagecount = total;} 
+Image.src ="Images/"+ imagecount +".jpg";
+}
+ 
+window.setInterval (function slide() {
+var Image = document.getElementById ('img');
+imagecount = imagecount + 1;
+if(imagecount > total){imagecount = 1;}
+if(imagecount < 1){imagecount = total;} 
+Image.src ="Images/"+ imagecount +".jpg";
+},10000);
+ 
+</script>
+
+<body onLoad="slideA()">
+<header>
+ <div id="nav">
+ <ul><img src="images/logo.jpg" width="45" height="40"><a>ARNAV COMPUTERS</a></ul>
+ 	<div id="nav_wrapper"> 
+	        <ul> 		
+			<li><a href="index.html">Home</a></li>
+			<li><a href="AboutUS.html">About</a></li>
+			<li><a href="#">Services</a>
+				<ul><li><a href="#">IT Services</a></li><ul><li><a href="#">CCTV</a></li></ul></ul>
+				
+			</li>
+			    <li><a href="Products.html">Products</a></li>				
+				<li><a href="ContactUs.html">Contact Us </a></li>
+        </ul>
+    </div>
+	
+<div id="container">
+<img src="images/1.jpg" id="img"/>
+<div id="left_holder">
+<img onclick = "slide(-1)">
+</div> 
+<div id="right_holder">
+<img onclick = "slide(1)">
+</div>
+</div>
+</header>
+<h3 style="line-height:1.1em;" class="font_ITservices">
+</span style="line-height:1.1em;">
+<strong>IT</strong>
+<br>SERVICES</br>
+</span>
+</h3>
+<div style= "top: 456px; left: 100px; width: 1141px; height: 10px; position: absolute;" class="s2" id="mainPage_FiveGridLine_3" 
+data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$mainPage.1.$mainPage_FiveGridLine_3">
+<div id="mainPage_FiveGridLine_3line" 
+class="s2line" 
+data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$mainPage.1.$mainPage_FiveGridLine_3.0">
+</div>
+</div> 
+	 <section class=ITservices>
+	 <h1 class="color_1">Our Services</h1>
+	 <div style= "top: 496px; left: 100px; width: 1141px; height: 10px; position: absolute;" class="s2" id="mainPage_FiveGridLine_3" 
+	 data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$mainPage.1.$mainPage_FiveGridLine_3">
+	 <div id="mainPage_FiveGridLine_3line" 
+	 class="s2line" 
+data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$mainPage.1.$mainPage_FiveGridLine_3.0">
+</div>
+</div>
+	 <table class= "ITServices_AMC">
+	 <table><h1 class="ITServices_AMC">Annual Maintenance Contracts</table>
+	 <p>We can offer your company a support and service contract to keep your business equipment systems at peak performance. This service contract includes regular scheduled maintenance for all systems and equipment at an agreed service level and cost.
+</p>
+	 </table> 	
+		<table><h3>Maintenance contract includes following:</h3></table>
+	 <table>
+<table>Personal Computer Solutions</table>
+<table>Laptop Solutions</table>
+<table>Networking Solutions</table>
+<table>Mail and Domain Server Solutions</table>
+<table>Wireless Solutions</table>
+<table>Data Recovery And Backup Solutions</table>
+<table>Virus Protection Solution</table>
+<table>Printer & Scanner Repair Solutions</table>
+<table>Windows Server Solutions</table></table>
+
+<article> 
+	 <img src="images/services.jpg" alt="services" />
+	 </article>	 
+	 </section> 
+
+
+	 <section> 	 
+	 <table class= "ITServices_RE">
+	 <table><h1 class="ITServices_RE">Resident Engineer Services</table>
+	 
+	 <p>We quickly adapt to changing technologies, constantly re-engineering our framework and ensure that our clients are working on the latest technologies, for more productivity.</p>
+	 
+<p><h4> Maximize network performance..</h4></p> 
+<p>Enable a quick response to issues, minimize negative impacts and avoid issues altogether with proactive monitoring and expert recommendation.</p> 
+<p><h4>Improve return on investment..</h4></p>
+<p>Take advantage of new technology and features and help introduce those features to your network more quickly, resulting in improved services and the ability to offer new services.</p>
+<p><h4>Improve Staff utilization..</h4></p>
+<p>Hands-on assistance with technical issue and on-the-job informal knowledge transfer to meet the individual needs of your engineering staff.</p>
+<p><h4>Minimize operating costs..</h4></p>
+<p>Cost-effective approach for acquiring rare skill sets, managing temporary peaks in workload and staff shortage.</p>  
+	 </section>
+	
+	 
+	 
+	 
+
+	 
+	 <footer>
+	 <section_footer>
+	 <h3><b>Arnav Computers</b></h3>
+	 <p><b>215-555-555</b><br><br>
+	 Ghatkopar west<br>
+	 mumbai<br>
+	 arnav@arnavcomputers.com</p>
+	</section_footer>
+	<section_footer>
+	 <h3>Connect with Us</h3>
+	 <ul class="social">
+		<li><a href="#"><img src="images/facebook.png"></li>
+		<li><a href="#"><img src="images/linkedin.png"></li>
+			
+	 </ul>
+	</section_footer>
+	
+	<section_footer>
+	 <img src="images/logo.jpg" alt="IT_Service6" />
+	</section_footer>
+	 </footer>
+	 <footer>
+	 @copyright arnav
+	 </footer>
+</body>
+</html>

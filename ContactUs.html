@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>: My Website </title>
+<link href="style1.css" type="text/css" rel="stylesheet" />
+<style>
+
+
+</style>
+
+</head>
+<script type="text/javascript">
+var imagecount = 1;
+var total = 6;
+
+function slide(X) {
+var Image = document.getElementById ('img');
+imagecount = imagecount + X;
+if(imagecount > total){imagecount = 1;}
+if(imagecount < 1){imagecount = total;} 
+Image.src ="Images/"+ imagecount +".jpg";
+}
+ 
+window.setInterval (function slide() {
+var Image = document.getElementById ('img');
+imagecount = imagecount + 1;
+if(imagecount > total){imagecount = 1;}
+if(imagecount < 1){imagecount = total;} 
+Image.src ="Images/"+ imagecount +".jpg";
+},10000);
+ 
+</script>
+
+<body onLoad="slideA()">
+<header>
+ <div id="nav">
+ <ul><img src="images/logo.jpg" width="45" height="40"><a>ARNAV COMPUTERS</a></ul>
+ 	<div id="nav_wrapper"> 
+	        <ul> 		
+			<li><a href="index.html">Home</a></li>
+			<li><a href="AboutUs.html">About</a></li>
+			<li><a href="ITservices.html">Services</a>
+				<ul><li><a href="ITservices.html">IT Services</a></li>
+				<ul><li><a href="#">CCTV</a></li></ul></ul>
+				
+			</li>
+			    <li><a href="Products.html">Products</a></li>				
+				<li><a href="#">Contact Us </a></li>
+        </ul>
+    </div>
+	
+<div id="container">
+<img src="images/1.jpg" id="img"/>
+<div id="left_holder">
+<img onclick = "slide(-1)">
+</div> 
+<div id="right_holder">
+<img onclick = "slide(1)">
+</div>
+</div>
+</header>
+<h3 style="line-height:1.1em;" class="font">
+</span style="line-height:1.1em;">
+<strong>CONTACT</strong>
+<br>US</br>
+</span>
+</h3>
+<div style= "top: 456px; left: 100px; width: 1141px; height: 10px; position: absolute;" class="s2" id="mainPage_FiveGridLine_3" 
+data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$mainPage.1.$mainPage_FiveGridLine_3">
+<div id="mainPage_FiveGridLine_3line" 
+class="s2line" 
+data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$mainPage.1.$mainPage_FiveGridLine_3.0">
+</div>
+</div> 
+	 <section>
+	 <h1 class="color_1">About</h1>
+	 <div style= "top: 496px; left: 100px; width: 1141px; height: 10px; position: absolute;" class="s2" id="mainPage_FiveGridLine_3" 
+	 data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$mainPage.1.$mainPage_FiveGridLine_3">
+	 <div id="mainPage_FiveGridLine_3line" 
+	 class="s2line" 
+data-reactid=".0.$SITE_ROOT.$desktop_siteRoot.$PAGES_CONTAINER.1.1.$SITE_PAGES.$mainPage.1.$mainPage_FiveGridLine_3.0">
+</div>
+</div>
+	 <p>We can offer your company a support and service contract to keep your business equipment systems at peak performance. This service contract includes regular scheduled maintenance for all systems and equipment at an agreed service level and cost.</p>
+	 <button id="position1" type="button" class="menu1" onclick="alert('Site Under Construction')">More Info</button>
+	 </section> 	 
+	 <section> 	 
+	 <h1 class="color_2">Services</h1>
+	 <p>We quickly adapt to changing technologies, constantly re-engineering our framework and ensure that our clients are working on the latest technologies, for more productivity.</p>
+	 <button id="position2" type="button" class="menu2" onclick="alert('Site Under Construction')">More Info</button>
+	 </section>
+	 <section> 	 
+	 <h1 class="color_3">Products</h1>
+	 <p>We have made several programs with their own unique benefits devised for specific IT business aspects that relates to security, maintenance and consultation of client's IT Infrastructure.</p>
+	 <button id="position3" type="button" class="menu3" onclick="alert('Site Under Construction')">More Info</button>
+	 </section>
+	 <div class="clear"></div>
+	 <article> 
+	 <img src="images/support.jpg" alt="support" />
+	 </article> 	 
+	 <aside>
+	 <h2> Our Group Class Schedule:</h2>
+	 <ul class="gym">
+	 <li><h3>Studio Clycling at 8 a.m -60mins</h3></li>
+	 <li><h3>Abs Sculpting at 12 p.m -30mins</h3></li>
+	 <li><h3>Power Yoga at 10 a.m. -60mins</h3></li>
+	 </aside>
+	 <div class="clear">
+	 </div>	 	 	 
+	 <footer>
+	 <section_footer>
+	 <h3><b>Arnav Computers</b></h3>
+	 <p><b>215-555-555</b><br><br>
+	 Ghatkopar west<br>
+	 mumbai<br>
+	 arnav@arnavcomputers.com</p>
+	</section_footer>
+	<section_footer>
+	 <h3>Connect with Us</h3>
+	 <ul class="social">
+		<li><a href="#"><img src="images/facebook.png"></li>
+		<li><a href="#"><img src="images/linkedin.png"></li>
+			
+	 </ul>
+	</section_footer>
+	
+	<section_footer>
+	 <img src="images/logo.jpg" alt="IT_Service6" />
+	</section_footer>
+	 </footer>
+	 <footer>
+	 @copyright arnav
+	 </footer>
+</body>
+</html>

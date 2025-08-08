@@ -1,0 +1,148 @@
+body {
+padding: 0;
+margin:0;
+background:#ffffff;
+text-align: left;
+font-family: Arial;
+font-size: 18px
+
+}
+h1{
+text-align:left;
+font-family:"Times New Roman";
+font:24pt;
+color:#0b387e;
+}
+#nav{
+background-color:#474747;
+margin-top:10px;
+text-align: center;
+}
+#nav_wrapper{
+width:960px;
+margin:0 auto;
+text-align:left;
+}
+#nav ul {
+list-style-type: none;
+padding:0px;
+margin:0px;
+position: relative;
+line-height:30px;
+z-index:10;
+}
+#nav ul li{
+margin:0;
+padding:0;
+display:inline-block;
+list-style: none;
+}
+#nav ul li:hover{
+background-color:#ffffff;
+padding:0;
+}
+#nav ul li a{
+text-align: center;
+color: #ffffff;
+display: block;
+padding:0px;
+height:42px;
+width:150px;
+text-decoration: none;
+font-size:20px;
+border:1px solid #FFF;
+text-shadow:1px 1px 1px #000;
+}
+#nav ul li a:hover{
+color: #099;
+text-decoration: none;
+}
+#nav ul li:hover ul{
+visibility:visible;
+display: block;
+}
+#nav ul li:hover ul li a:hover {
+background:#CCC;
+color:#000;
+}
+#nav ul ul {
+position:absolute;
+visibility:hidden;
+top:30px;
+display: none;
+padding:0px;
+background-color:#474747;
+min-width: 100px;
+border:;
+}
+#nav ul ul li {
+display:block;
+float: none;
+margin: 1px 0 0;
+}
+#nav ul ul li a{
+color: #ffffff;
+padding:0px;
+height:42px;
+width:150px;
+display:block;
+}
+#nav ul ul li a:hover{
+color: #099;
+}
+
+
+@keyframes slidy {
+0% { left: 0%; }
+10% { left: 0%}
+20% { left: -2%; }
+25% { left: -100%; }
+45% { left: -5%; }
+45% { left: -102%; }
+50% { left: -200%; }
+70% { left: -202%; }
+75% { left: -300%; }
+95% { left: -302%; }
+100% { left: -400%; }
+}
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img { height:550%;width: 20%; float: left;}
+div#slider figure { 
+  position:relative;
+  width: 2000%;
+  margin: 30px;
+  left: 0%;
+  text-align: left;
+  font-size: 0;
+  animation: 20s slidy infinite;
+ }
+
+.picRight{
+position:left-side;
+float:top-left-side; 
+text-align:top;
+padding-top: 0%
+}
+.headerBreak {
+width:100%;
+height:35%;
+border-bottom: 2px solid #6d6868;
+}
+#main { width:1050px;
+height: 900px;
+background: ;
+margin: 25px auto;
+margin-top:20px;
+border: ;
+}
+#Bottom{
+    position: absolute;
+    bottom:70px;
+	text-align:left;
+	font-size:18px;
+}
+#wrapper {
+	background: #ddd url('images/bodybg.png') repeat-x scroll top left;
+}
+
